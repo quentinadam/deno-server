@@ -7,19 +7,7 @@ A web server framework inspired by [Deno Fresh](https://fresh.deno.dev/).
 ## Usage
 
 ```ts
-import server from '@quentinadam/server';
-
-server(true); // doesn't throw
-
-server(false); // throws an AssertionError
-
-server(false, 'message'); // throws an AssertionError with a custom error message
-
-server(false, new Error('message')); // throws a custom Error
-
-const value: string | undefined = 'hello';
-server(value !== undefined); // narrows the type of value to string;
-value.toUpperCase(); // works
+import { Server } from '@quentinadam/server';
 ```
 
 [ci-image]: https://img.shields.io/github/actions/workflow/status/quentinadam/deno-server/ci.yml?branch=main&logo=github&style=flat-square
