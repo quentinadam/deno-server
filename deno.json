@@ -25,8 +25,8 @@
   "imports": {
     "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.17",
     "@quentinadam/ensure": "jsr:@quentinadam/ensure@^0.1.5",
-    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.12",
-    "preact": "npm:preact@^10.29.0",
+    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.14",
+    "preact": "npm:preact@^10.29.1",
     "preact-render-to-string": "npm:preact-render-to-string@^6.6.7",
     "preact-root-fragment": "npm:preact-root-fragment@^0.3.1",
     "typescript": "npm:typescript@^6.0.2"

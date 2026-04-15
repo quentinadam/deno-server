@@ -1,20 +1,19 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@noble/hashes@^2.0.1": "2.0.1",
+    "jsr:@noble/hashes@^2.2.0": "2.2.0",
     "jsr:@quentinadam/assert@~0.1.17": "0.1.17",
     "jsr:@quentinadam/ensure@~0.1.5": "0.1.5",
-    "jsr:@quentinadam/hash@~0.1.12": "0.1.12",
-    "jsr:@quentinadam/uint8array-extension@~0.1.13": "0.1.13",
-    "npm:preact-render-to-string@^6.6.7": "6.6.7_preact@10.29.0",
-    "npm:preact-root-fragment@~0.3.1": "0.3.1_preact@10.29.0",
-    "npm:preact@10.29.0": "10.29.0",
-    "npm:preact@^10.29.0": "10.29.0",
+    "jsr:@quentinadam/hash@~0.1.14": "0.1.14",
+    "jsr:@quentinadam/uint8array-extension@~0.1.18": "0.1.18",
+    "npm:preact-render-to-string@^6.6.7": "6.6.7_preact@10.29.1",
+    "npm:preact-root-fragment@~0.3.1": "0.3.1_preact@10.29.1",
+    "npm:preact@^10.29.1": "10.29.1",
     "npm:typescript@^6.0.2": "6.0.2"
   },
   "jsr": {
-    "@noble/hashes@2.0.1": {
-      "integrity": "e0e908292a0bf91099cf8ba0720a1647cef82ab38b588815b5e9535b4ff4d7bb"
+    "@noble/hashes@2.2.0": {
+      "integrity": "984d0f07d004ac13a6029ef2b200651b1572fcc952be4b313ef4e312ad696189"
     },
     "@quentinadam/assert@0.1.17": {
       "integrity": "9eef3bbf11e01f89e53a3ca569a390fd9f313edfd1b962477684528bafeb9f35"
@@ -25,8 +24,8 @@
         "jsr:@quentinadam/assert"
       ]
     },
-    "@quentinadam/hash@0.1.12": {
-      "integrity": "b8cbac62bb0441f786a30137f97b9f73f961b291ea4de685a061961fdc9e2c7c",
+    "@quentinadam/hash@0.1.14": {
+      "integrity": "71ae154f75d67a0f57a81a3a10b01c35b296e955320b63668f5c87f1b198480d",
       "dependencies": [
         "jsr:@noble/hashes",
         "jsr:@quentinadam/assert",
@@ -34,28 +33,28 @@
         "jsr:@quentinadam/uint8array-extension"
       ]
     },
-    "@quentinadam/uint8array-extension@0.1.13": {
-      "integrity": "7d8aec5028b42876b83496066b547902d9fa7929e87b7e0f74dc4ff2847ab280",
+    "@quentinadam/uint8array-extension@0.1.18": {
+      "integrity": "c065e91a6e7d9ec6f11ed9f27856c8fc456953165553aead3acf68751a7d18e2",
       "dependencies": [
         "jsr:@quentinadam/assert"
       ]
     }
   },
   "npm": {
-    "preact-render-to-string@6.6.7_preact@10.29.0": {
+    "preact-render-to-string@6.6.7_preact@10.29.1": {
       "integrity": "sha512-3XdbsX3+vn9dQW+jJI/FsI9rlkgl6dbeUpqLsChak6jp3j3auFqBCkno7VChbMFs5Q8ylBj6DrUkKRwtVN3nvw==",
       "dependencies": [
         "preact"
       ]
     },
-    "preact-root-fragment@0.3.1_preact@10.29.0": {
+    "preact-root-fragment@0.3.1_preact@10.29.1": {
       "integrity": "sha512-Kva0DYwT5U4D54NSp7WzuyWMtIAlqDyZlM+LWKm7z4bO47K8+tOUPn1Ord2qfyETw0Erq109IF7O3ZzUv0kx6A==",
       "dependencies": [
         "preact"
       ]
     },
-    "preact@10.29.0": {
-      "integrity": "sha512-wSAGyk2bYR1c7t3SZ3jHcM6xy0lcBcDel6lODcs9ME6Th++Dx2KU+6D3HD8wMMKGA8Wpw7OMd3/4RGzYRpzwRg=="
+    "preact@10.29.1": {
+      "integrity": "sha512-gQCLc/vWroE8lIpleXtdJhTFDogTdZG9AjMUpVkDf2iTCNwYNWA+u16dL41TqUDJO4gm2IgrcMv3uTpjd4Pwmg=="
     },
     "typescript@6.0.2": {
       "integrity": "sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==",
@@ -66,10 +65,10 @@
     "dependencies": [
       "jsr:@quentinadam/assert@~0.1.17",
       "jsr:@quentinadam/ensure@~0.1.5",
-      "jsr:@quentinadam/hash@~0.1.12",
+      "jsr:@quentinadam/hash@~0.1.14",
       "npm:preact-render-to-string@^6.6.7",
       "npm:preact-root-fragment@~0.3.1",
-      "npm:preact@^10.29.0",
+      "npm:preact@^10.29.1",
       "npm:typescript@^6.0.2"
     ]
   }
