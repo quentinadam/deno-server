@@ -1,4 +1,4 @@
-import sha256 from '@quentinadam/hash/sha256';
+import { sha256 } from '@quentinadam/hash/sha256';
 import { readDirectory as _readDirectory } from './readDirectory.ts';
 
 function hash(value: string) {

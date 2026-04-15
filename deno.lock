@@ -4,7 +4,7 @@
     "jsr:@noble/hashes@^2.2.0": "2.2.0",
     "jsr:@quentinadam/assert@~0.1.17": "0.1.17",
     "jsr:@quentinadam/ensure@~0.1.5": "0.1.5",
-    "jsr:@quentinadam/hash@~0.1.14": "0.1.14",
+    "jsr:@quentinadam/hash@~0.1.15": "0.1.15",
     "jsr:@quentinadam/uint8array-extension@~0.1.18": "0.1.18",
     "npm:preact-render-to-string@^6.6.7": "6.6.7_preact@10.29.1",
     "npm:preact-root-fragment@~0.3.1": "0.3.1_preact@10.29.1",
@@ -24,8 +24,8 @@
         "jsr:@quentinadam/assert"
       ]
     },
-    "@quentinadam/hash@0.1.14": {
-      "integrity": "71ae154f75d67a0f57a81a3a10b01c35b296e955320b63668f5c87f1b198480d",
+    "@quentinadam/hash@0.1.15": {
+      "integrity": "1ffa58cd71be1257978726c0c945212961bf78630ff0af96b84d046b22792fd3",
       "dependencies": [
         "jsr:@noble/hashes",
         "jsr:@quentinadam/assert",
@@ -65,7 +65,7 @@
     "dependencies": [
       "jsr:@quentinadam/assert@~0.1.17",
       "jsr:@quentinadam/ensure@~0.1.5",
-      "jsr:@quentinadam/hash@~0.1.14",
+      "jsr:@quentinadam/hash@~0.1.15",
       "npm:preact-render-to-string@^6.6.7",
       "npm:preact-root-fragment@~0.3.1",
       "npm:preact@^10.29.1",
