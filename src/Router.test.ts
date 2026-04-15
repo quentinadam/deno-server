@@ -1,4 +1,4 @@
-import assert from '@quentinadam/assert';
+import { assert } from '@quentinadam/assert';
 import { Matcher, RouteNode, Router } from './Router.ts';
 
 function assertThrows(fn: () => void, message?: string): void {

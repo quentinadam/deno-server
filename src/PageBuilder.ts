@@ -1,6 +1,6 @@
 import { type Attributes, type ComponentChildren, type ComponentType, Fragment, h, options, type VNode } from 'preact';
 import { render } from 'preact-render-to-string';
-import ensure from '@quentinadam/ensure';
+import { ensure } from '@quentinadam/ensure';
 import { moduleUrl } from './hydrateIslands.ts';
 
 function Comment(text: string) {

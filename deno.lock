@@ -2,10 +2,10 @@
   "version": "5",
   "specifiers": {
     "jsr:@noble/hashes@^2.2.0": "2.2.0",
-    "jsr:@quentinadam/assert@~0.1.17": "0.1.17",
-    "jsr:@quentinadam/ensure@~0.1.5": "0.1.5",
-    "jsr:@quentinadam/hash@~0.1.15": "0.1.15",
-    "jsr:@quentinadam/uint8array-extension@~0.1.18": "0.1.18",
+    "jsr:@quentinadam/assert@~0.1.18": "0.1.18",
+    "jsr:@quentinadam/ensure@~0.1.6": "0.1.6",
+    "jsr:@quentinadam/hash@~0.1.16": "0.1.16",
+    "jsr:@quentinadam/uint8array-extension@~0.1.19": "0.1.19",
     "npm:preact-render-to-string@^6.6.7": "6.6.7_preact@10.29.1",
     "npm:preact-root-fragment@~0.3.1": "0.3.1_preact@10.29.1",
     "npm:preact@^10.29.1": "10.29.1",
@@ -15,26 +15,25 @@
     "@noble/hashes@2.2.0": {
       "integrity": "984d0f07d004ac13a6029ef2b200651b1572fcc952be4b313ef4e312ad696189"
     },
-    "@quentinadam/assert@0.1.17": {
-      "integrity": "9eef3bbf11e01f89e53a3ca569a390fd9f313edfd1b962477684528bafeb9f35"
+    "@quentinadam/assert@0.1.18": {
+      "integrity": "33a484ad66cab3d5453f69730d49c05bded72b7ff1bd54b5cc3fc2327fe314ca"
     },
-    "@quentinadam/ensure@0.1.5": {
-      "integrity": "69e744b5015c0ef2db83e2116321524f720c04bf345805a45fb657510d01a7f7",
+    "@quentinadam/ensure@0.1.6": {
+      "integrity": "67ac14be280165486613bab54c619bad1783e569601584c3ad63536f08610818",
       "dependencies": [
         "jsr:@quentinadam/assert"
       ]
     },
-    "@quentinadam/hash@0.1.15": {
-      "integrity": "1ffa58cd71be1257978726c0c945212961bf78630ff0af96b84d046b22792fd3",
+    "@quentinadam/hash@0.1.16": {
+      "integrity": "e9ba62e5f1038202d99d97c8cd271c1b08c5fa5955f854002b626b62a32b47cd",
       "dependencies": [
         "jsr:@noble/hashes",
-        "jsr:@quentinadam/assert",
         "jsr:@quentinadam/ensure",
         "jsr:@quentinadam/uint8array-extension"
       ]
     },
-    "@quentinadam/uint8array-extension@0.1.18": {
-      "integrity": "c065e91a6e7d9ec6f11ed9f27856c8fc456953165553aead3acf68751a7d18e2",
+    "@quentinadam/uint8array-extension@0.1.19": {
+      "integrity": "485b6b7fbc265502c11ccbe151f90f240b59399a40f9e3cef2003e36f950249a",
       "dependencies": [
         "jsr:@quentinadam/assert"
       ]
@@ -63,9 +62,9 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@quentinadam/assert@~0.1.17",
-      "jsr:@quentinadam/ensure@~0.1.5",
-      "jsr:@quentinadam/hash@~0.1.15",
+      "jsr:@quentinadam/assert@~0.1.18",
+      "jsr:@quentinadam/ensure@~0.1.6",
+      "jsr:@quentinadam/hash@~0.1.16",
       "npm:preact-render-to-string@^6.6.7",
       "npm:preact-root-fragment@~0.3.1",
       "npm:preact@^10.29.1",

@@ -31,7 +31,7 @@ Deno.writeTextFileSync(
       return `import ${hash} from '${path}';`;
     }),
     '',
-    'const manifest = {',
+    'export const manifest = {',
     '  url: import.meta.url,',
     '  routes: [',
     ...routes.map(({ hash, path }) => {
@@ -50,6 +50,5 @@ Deno.writeTextFileSync(
     '  ],',
     '};',
     '',
-    'export default manifest;',
   ].join('\n'),
 );
