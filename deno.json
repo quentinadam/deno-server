@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A web server framework inspired by Deno Fresh",
   "license": "MIT",
   "author": "Quentin Adam",
