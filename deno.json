@@ -1,0 +1,34 @@
+{
+  "name": "@quentinadam/server",
+  "version": "0.1.0",
+  "description": "A web server framework inspired by Deno Fresh",
+  "license": "MIT",
+  "author": "Quentin Adam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinadam/deno-server.git"
+  },
+  "exports": {
+    ".": "./src/mod.ts",
+    "./generate-manifest": "./src/generate-manifest.ts"
+  },
+  "fmt": {
+    "singleQuote": true,
+    "lineWidth": 120
+  },
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "imports": {
+    "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.17",
+    "@quentinadam/ensure": "jsr:@quentinadam/ensure@^0.1.5",
+    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.12",
+    "preact": "npm:preact@^10.29.0",
+    "preact-render-to-string": "npm:preact-render-to-string@^6.6.7",
+    "preact-root-fragment": "npm:preact-root-fragment@^0.3.1",
+    "typescript": "npm:typescript@^6.0.2"
+  }
+}
