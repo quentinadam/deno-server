@@ -1,5 +1,5 @@
 import sha256 from '@quentinadam/hash/sha256';
-import _readDirectory from './readDirectory.ts';
+import { readDirectory as _readDirectory } from './readDirectory.ts';
 
 function hash(value: string) {
   return Array.from((sha256(value).slice(0, 12)).toHex()).map((digit) => {

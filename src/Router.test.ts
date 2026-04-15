@@ -1,5 +1,5 @@
 import assert from '@quentinadam/assert';
-import Router, { Matcher, RouteNode } from './Router.ts';
+import { Matcher, RouteNode, Router } from './Router.ts';
 
 function assertThrows(fn: () => void, message?: string): void {
   let threw = false;

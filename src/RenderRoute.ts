@@ -1,6 +1,6 @@
 import type { VNode } from 'preact';
-import type Method from './Method.ts';
-import BaseRoute from './BaseRoute.ts';
+import type { Method } from './Method.ts';
+import { BaseRoute } from './BaseRoute.ts';
 
 export type RenderRouteHandler<Context> = ({ request, info, context, params, render }: {
   request: Request;
@@ -10,7 +10,7 @@ export type RenderRouteHandler<Context> = ({ request, info, context, params, ren
   render: () => Promise<Response>;
 }) => Response | Promise<Response>;
 
-export default class RenderRoute<Context> extends BaseRoute<Context> {
+export class RenderRoute<Context> extends BaseRoute<Context> {
   constructor(handlers: { render: () => VNode } & Partial<Record<Method, RenderRouteHandler<Context>>>) {
     super((method) => {
       const handler = handlers[method];

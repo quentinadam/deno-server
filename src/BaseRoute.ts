@@ -1,7 +1,7 @@
-import type Method from './Method.ts';
-import type Handler from './Handler.ts';
+import type { Method } from './Method.ts';
+import type { Handler } from './Handler.ts';
 
-export default class BaseRoute<Context> {
+export class BaseRoute<Context> {
   CONNECT?: Handler<Context>;
   DELETE?: Handler<Context>;
   GET?: Handler<Context>;

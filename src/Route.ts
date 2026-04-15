@@ -1,5 +1,5 @@
-import type Method from './Method.ts';
-import BaseRoute from './BaseRoute.ts';
+import type { Method } from './Method.ts';
+import { BaseRoute } from './BaseRoute.ts';
 
 export type RouteHandler<Context> = ({ request, info, context, params }: {
   request: Request;
@@ -8,7 +8,7 @@ export type RouteHandler<Context> = ({ request, info, context, params }: {
   params: Partial<Record<string, string | string[]>>;
 }) => Response | Promise<Response>;
 
-export default class Route<Context> extends BaseRoute<Context> {
+export class Route<Context> extends BaseRoute<Context> {
   constructor(handlers: Partial<Record<Method, RouteHandler<Context>>>) {
     super((method) => {
       const handler = handlers[method];

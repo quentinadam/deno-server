@@ -1,7 +1,7 @@
 import { type ComponentType, h, hydrate } from 'preact';
 import { createRootFragment } from 'preact-root-fragment';
 
-export default function hydrateIslands(
+export function hydrateIslands(
   islands: { id: string; Component: ComponentType; props: Record<string, unknown> }[],
 ) {
   const startCommentNodes = new Map<string, Node>();

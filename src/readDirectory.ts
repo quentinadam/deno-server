@@ -1,4 +1,4 @@
-export default function* readDirectory(path: string) {
+export function* readDirectory(path: string) {
   try {
     Deno.statSync(path);
   } catch {

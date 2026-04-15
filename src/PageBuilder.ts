@@ -12,7 +12,7 @@ function wrapWithMarker(vnode: ComponentChildren, markerText: string) {
   return h(Fragment, null, Comment(markerText), vnode, Comment('/' + markerText));
 }
 
-export default class PageBuilder {
+export class PageBuilder {
   readonly #islands;
   readonly #bundledScripts = new Map<string, string>();
 

@@ -30,7 +30,7 @@ function splitPath(path: string): string[] {
   return path === '/' ? [] : path.slice(1).split('/');
 }
 
-export default class Router {
+export class Router {
   readonly root = new RouteNode();
 
   addHandler(path: string, handler: Handler) {
@@ -68,6 +68,7 @@ export default class Router {
       }
       index++;
     }
+    assert(node.handler === undefined, `Duplicate route ${path}`);
     node.handler = handler;
   }
 

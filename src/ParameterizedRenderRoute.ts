@@ -1,6 +1,6 @@
 import { Fragment, h, type VNode } from 'preact';
-import type Method from './Method.ts';
-import BaseRounte from './BaseRoute.ts';
+import type { Method } from './Method.ts';
+import { BaseRoute } from './BaseRoute.ts';
 
 export type ParameterizedRenderRouteHandler<T extends Record<string, unknown>, Context> = ({
   request,
@@ -16,7 +16,7 @@ export type ParameterizedRenderRouteHandler<T extends Record<string, unknown>, C
   render: (props: T) => Promise<Response>;
 }) => Response | Promise<Response>;
 
-export default class ParameterizedRenderRoute<T extends Record<string, unknown>, Context> extends BaseRounte<Context> {
+export class ParameterizedRenderRoute<T extends Record<string, unknown>, Context> extends BaseRoute<Context> {
   constructor(
     handlers: { render: (props: T) => VNode } & Partial<Record<Method, ParameterizedRenderRouteHandler<T, Context>>>,
   ) {

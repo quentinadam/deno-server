@@ -1,13 +1,13 @@
 import type { VNode } from 'preact';
-import type BaseRoute from './BaseRoute.ts';
-import type Method from './Method.ts';
-import PageBuilder from './PageBuilder.ts';
-import Router from './Router.ts';
-import readDirectory from './readDirectory.ts';
+import type { BaseRoute } from './BaseRoute.ts';
+import type { Method } from './Method.ts';
+import { PageBuilder } from './PageBuilder.ts';
+import { Router } from './Router.ts';
+import { readDirectory } from './readDirectory.ts';
 
 const methods: Method[] = ['CONNECT', 'DELETE', 'GET', 'HEAD', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'TRACE'];
 
-export default class Server<Context> {
+export class Server<Context> {
   readonly #routers = Object.fromEntries(methods.map((method) => [method, new Router()]));
   readonly #contentTypes = new Map<string | undefined, string>([
     ['.css', 'text/css'],
